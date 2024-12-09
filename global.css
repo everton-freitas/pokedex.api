@@ -1,0 +1,289 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 30px;
+}
+
+.content {
+    width: 100vw;
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin: auto;
+    max-width: 419px;
+    padding: 12px;
+}
+
+h1 {
+    display: block;
+    
+    margin: 1rem;
+}
+
+.pokemons li {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+}
+
+.pokemons img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left:60px;
+    margin-top: -5px;
+}
+
+.fire {
+    background-color: #EC8484
+}
+
+
+.grass {
+    background-color: #339933
+} 
+
+.electric {
+    background-color: #ebe000;
+}
+
+.status.electric {
+    filter: brightness(.9);
+    color: rgb(255, 255, 255);
+    filter: brightness(.95);
+}
+
+.psychic {
+    background-color: #ca5db8
+
+}
+.ghost {
+    background-color:  #A292BC
+    ;
+}
+
+.poison {
+    background-color: rgb(169, 0, 169);
+
+}
+
+.water {
+    background-color: #6699FF
+}
+
+.bug {
+    background-color: #49c722;
+}
+
+.fighting {
+    background-color: brown;
+}
+
+.ground {
+    background-color: #CC9966;
+}
+
+.flying {
+    background-color: #90b5ff
+
+}
+
+.rock {
+    background-color: #f0b400;
+}
+
+.normal {
+    background-color: #90b5ff
+}
+
+.fairy {
+    background-color: #ff9dfa;
+}
+
+.fire {
+    background-color: rgb(255, 102, 102);
+}
+
+.ice {
+    background-color: hsl(220, 100%, 84%);
+}
+
+.dragon {
+    background-color: rgb(50, 50, 252);
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c {
+    background-color: rgb(245, 81, 81);
+}
+
+.status {
+    color: rgba(255, 255, 255, 0.841);
+    text-align: center;
+    padding: 3px 0px;
+    border-radius: 1rem;
+    font-size: 11px;
+    width: 55px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    filter: brightness(1.2);
+}
+
+.name {
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 10px;
+    text-transform: capitalize;
+}
+
+.id {
+    color: rgba(34, 34, 34, 0.54);
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+
+
+.s {
+    background-color: rgb(71, 160, 255);
+}
+
+.p {
+    background-color: rgb(210, 210, 17);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#loadmore {
+    background-color: #6c79db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.pokemon-modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.pokemon-modal img {
+    width: 100px;
+    height: auto;
+}
+
+.pokemon-modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 380px) {
+    .pokemons img {
+        max-width: 80%;
+        height: 80px;
+        top: 0;
+    }
+
+    .id {
+        margin-left: 80px;
+    }
+
+    #charizard {
+        position: relative;
+        left: -10px;
+    }
+
+    .status {
+        font-size: 12px;
+    }
+
+    .name {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 580px){
+
+    .content {
+        margin: auto;
+    }
+
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 630px;
+        padding: 12px;
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        margin: 0 auto;
+    }
+
+    
+
+    .pokemons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 830px;
+        padding: 12px;
+    }
+}
