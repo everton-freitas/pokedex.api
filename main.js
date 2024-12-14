@@ -1,8 +1,8 @@
 const pokemonsOl = document.querySelector('.pokemons')
 const loadMoreButton = document.getElementById('loadmore')
-const limit = 10
-const maxRecords = 151
-let offset = 0
+const limit = 200
+const maxRecords = 400 
+let offset = 151
 
 
 function convertPokemonToHtml(pokemon) {

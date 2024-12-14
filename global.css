@@ -81,6 +81,14 @@ h1 {
     filter: brightness(.95);
 }
 
+.dark {
+    background-color: rgb(112, 112, 112);
+}
+
+.steel {
+    background-color: rgb(161, 179, 182);
+}
+
 .psychic {
     background-color: #ca5db8
 
