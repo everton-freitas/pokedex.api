@@ -295,3 +295,26 @@ li {
         padding: 12px;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 18px;
+    }
+
+    .pokemons li {
+        position: relative;
+    }
+    .pokemons img {
+     width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}   
+
+    
+}
